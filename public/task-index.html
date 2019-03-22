@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Task Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+  <body>
+    <div id="menu">
+        <div class="logo">Task Manager</div>
+      <section class="header">
+<div class="task-total">
+
+        <div class="task"><span class="number">12</span>Task</div> <br>
+          <div class="task"><span class="number"> 5 </span>Completed</div>
+  </div>
+  <div class="add-circle">
+  <i class="fas fa-plus-circle"></i>
+</div>
+</div>
+</section>
+<!--Task Boxes-->
+<section class="content-area">
+<div class="container">
+  <div class="task-container">
+  <div class="task-box">
+    <div class="title">
+      Clean Room
+    </div>
+    <div class="date">
+      Created:  March 20, 2019
+    </div>
+    <div class="check-box">
+    <i class="fas fa-check"></i>
+  </div>
+  </div>
+  </div>
+
+  <div class="task-box">
+    <div class="title">
+      Clean Room
+    </div>
+    <div class="date">
+      Created:  March 20,2019
+    </div>
+  </div>
+
+<div class="task-box">
+  <div class="title">
+    Clean Room
+  </div>
+  <div class="date">
+    Created:  March 20,2019
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<section class ="task-form">
+  <div class="close-btn"><i class="fas fa-times"></i></div>
+  <form>
+    <h3>Add a task</h3>
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input type="text" name="title">
+    </div>
+    <div class="form-group">
+      <label for="title">category:</label>
+      <input type="text" name="title">
+    </div>
+    <div class="form-group">
+      <label for="title">notes:</label>
+      <textarea name="notes"></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit">Add New Task</button>
+    </div>
+  </form>
+</section></div>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('.add-circle').on('click',function(){
+      $('.task-form').addClass('active')
+  })
+  $('.task-form .close-btn').on('click',function(){
+    $('.task-form').removeClass('active')
+})
+})
+</script>
+</section>
+  </body>
+</html>
